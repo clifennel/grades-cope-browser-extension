@@ -22,8 +22,10 @@ for (const node of gradescope_img_nodes) {
 
 gradescope_img_nodes = document.querySelectorAll("a[aria-label='Gradescope: Back to Home']>img[src*='cdn.gradescope.com/assets/logo/']")
 for (const node of gradescope_img_nodes) {
-    node.setAttribute(src='https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg')
+    node.setAttribute('src', 'https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg')
 }
+
+
 
 ---
 
@@ -32,3 +34,4 @@ for (const node of gradescope_img_nodes) {
 
 https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#web_accessible_resources
 
+Gradescope logo svg: https://cdn.gradescope.com/assets/logo/logo_endorsed-ea37018bcd9aefba905d7cf51c16e0979ca8d5eb43fae7c26a66230fc01e285b.svg
