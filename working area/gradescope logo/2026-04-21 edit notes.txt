@@ -1,0 +1,5 @@
+width: 163.857
+
+start x position: 33.465
+
+approx y start: 23.454
