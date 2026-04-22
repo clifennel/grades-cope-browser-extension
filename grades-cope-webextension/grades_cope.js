@@ -5,7 +5,6 @@ gradescope_logo_img_nodes = document.querySelectorAll("a[aria-label='Gradescope:
 // Posted by thebamby
 // Retrieved 2026-04-21, License - CC BY-SA 4.0
 var grades_cope_logo_url;
-
 if (typeof browser === "undefined") {
     // Chrome case
     grades_cope_logo_url = chrome.runtime.getURL("images/grades-cope-logo.svg");
