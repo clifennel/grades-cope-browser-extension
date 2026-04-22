@@ -1,0 +1,34 @@
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Attribute_selectors
+
+document.getElementsByTagName("a")
+document.querySelectorAll("a[aria-label]")
+document.querySelectorAll("a[aria-label=\"Gradescope: Back to Home\"]")
+document.querySelectorAll("a[aria-label=\"Gradescope: Back to Home\"]>img")
+document.querySelectorAll("a[aria-label='Gradescope: Back to Home']>img[src*='cdn.gradescope.com/assets/logo/']")
+
+---
+
+https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+
+gradescope_img_nodes = document.querySelectorAll("a[aria-label='Gradescope: Back to Home']>img[src*='cdn.gradescope.com/assets/logo/']")
+for (const node of gradescope_img_nodes) {
+    console.log("meow")
+}
+
+gradescope_img_nodes = document.querySelectorAll("a[aria-label='Gradescope: Back to Home']>img[src*='cdn.gradescope.com/assets/logo/']")
+for (const node of gradescope_img_nodes) {
+    node.setAttribute(src='https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg')
+}
+
+---
+
+- [ ] figure out best way to get image file to the page
+- [ ] limit image file to logo's original size?
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#web_accessible_resources
+
