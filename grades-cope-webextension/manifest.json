@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Grades Cope logo for Gradescope",
+  "version": "0.1.0",
+
+  "description": "Replaces Gradescope logo with Grades Cope logo",
+
+  "icons": {
+  },
+
+  "permissions": [
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.gradescope.com/*"],
+      "js": ["grades_cope.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+       "resources": [ "images/grades-cope-logo.svg" ],
+       "matches": [ "*://*.gradescope.com/*" ]
+    }
+  ]
+}
