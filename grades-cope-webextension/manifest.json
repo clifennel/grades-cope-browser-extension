@@ -6,6 +6,10 @@
   "description": "Replaces Gradescope logo with Grades Cope logo",
 
   "icons": {
+  "32": "icons/grades-cope-icon-vector.svg",
+  "48": "icons/grades-cope-icon-vector.svg",
+  "64": "icons/grades-cope-icon-vector.svg",
+  "96": "icons/grades-cope-icon-vector.svg"
   },
 
   "permissions": [
