@@ -1,1 +1,1 @@
-Changes the Gradescope logo from "GRADESCOPE" to "GRADES COPE"
+Changes the Gradescope logo from "gradescope" to "grades cope"
